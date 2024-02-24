@@ -4,9 +4,132 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #1e2235;
     color: #fff;
     font-family: "Roboto", sans-serif;
-    /* Define o traço da letra: font-weight: 100; */
+}
+
+header{
+    /* rem */
+
+    /* Definindo o tamanho da tela*/
+    width: 80%;
+    height: 100vh;
+
+    /* Centraliza a tela no meio */
+    /* margin: top/bottom right/left */
+    margin: 0 auto;
+
+    /* Afeta na largura */
+    padding: 3rem 0;
+    /* box-sizing : previni a influencia do padding na largura da tela */
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    /* Pro hmtl entender que é uma linha e não quebrar */
+    display: inline-block;
+}
+
+nav img{
+    float: left;
+}
+
+nav ul{
+    font-weight: 300;
+    /* remove os pontos da lista */
+    list-style: none;
+    float: right;
+    position: relative;
+    /* Translada no eixo y para 75% */
+    transform: translateY(75%);
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+}
+
+/* 
+    :last-child -> Pega o ultimo elemento(filho) da tag
+    :nth-child() -> Pega o filho referenciado dentro dos () 
+*/
+nav ul li a:last-child {
+    margin-left: 10px;
+}
+
+.line{
+    /* 
+        solid: cor sólida
+        dotted: preenche com pontos
+    */
+    border-left: 1px solid #fff;
+}
+
+.btn-outline {
+    /* Remove o sublinado do link */
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #8b5cf6;
+    background-color: #8b5cf6;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.banner-header {
+    height: 100%;
+    padding-top: 5rem;
+}
+
+.banner-header .left {
+    /* Flutuar para esquerda */
+    float: left;
+    width: 50%;
+}
+
+.banner-header .right {
+    float: right;
+    width: 50%;
+}
+
+div h2 {
+    /* Transforma o texto. Nesse caso coloca pra ter letras maiusculas */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #8b5cf6;
+    /* Espaço entre as letras */
+    letter-spacing: 2px;
+}
+
+div h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+div p {
+    margin: 20px 0 60px 0;
+    /* Determinando o grossura das letras */
+    font-weight: 300;
+    /* Espaço entre as linhas */
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+div .btn{
+    margin-top: 80px;
+}
+
+div .mini-message{
+    font-size: 0.9rem;
 }
