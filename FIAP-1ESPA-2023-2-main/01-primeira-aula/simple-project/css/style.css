@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
+    /* Resetar o layout da pág pra trabalhar as medidas depois */
     margin: 0;
     padding: 0;
 }
@@ -12,17 +13,20 @@ body {
 }
 
 header{
-    /* rem */
 
     /* Definindo o tamanho da tela*/
+
+    /* 80% do boby */
     width: 80%;
+    /* 100% da altura do viewport */
     height: 100vh;
 
     /* Centraliza a tela no meio */
+    /*         eixo y     eixo x     */
     /* margin: top/bottom right/left */
     margin: 0 auto;
 
-    /* Afeta na largura */
+    /* Acrescentando o top e o botton */
     padding: 3rem 0;
     /* box-sizing : previni a influencia do padding na largura da tela */
     box-sizing: border-box;
