@@ -1,0 +1,21 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid red;
+
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(2, 100px);
+
+    /* Quando quero formatar todo o conteudo */
+    justify-content: center;
+
+}
+
+.item {
+    padding: 10px;
+    background-color: pink;
+    color: greenyellow;
+    border: 10px solid rgb(204, 36, 92)
+
+}

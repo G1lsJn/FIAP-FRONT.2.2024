@@ -1,0 +1,39 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid red;
+
+    display: grid;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-columns: minmax(100px, 3fr) 1fr;
+
+    grid-template-areas: 
+        'header header'
+        'main aside'
+        'footer footer';
+
+}
+
+.item {
+    padding: 10px;
+    background-color: pink;
+    color: greenyellow;
+    border: 10px solid rgb(204, 36, 92)
+
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: main;
+}
+
+.item3 {
+    grid-area: aside;
+}
+
+.item4 {
+    grid-area: footer;
+}

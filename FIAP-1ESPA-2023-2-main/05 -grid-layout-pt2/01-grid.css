@@ -1,0 +1,49 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid red;
+
+    display: grid;
+    /* grid-template-rows: 100px 100px 100px 100px 100px 100px; */
+    grid-template-rows: repeat(6,100px);
+    /* grid-template-columns: 100px 100px 100px 100px 100px 100px; */
+    grid-template-columns: 100px minmax(100px, 3fr) 1fr;
+
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+
+    /*   linhas colunas */
+    gap: 1em 2em;
+}
+
+.item {
+    padding: 10px;
+    background-color: pink;
+    color: greenyellow;
+    border: 10px solid rgb(204, 36, 92)
+
+}
+
+.item1 {
+    
+    /*       start / end */
+    /* 
+    grid-row: 1 / 3;
+    grid-column: 1 / 7; 
+    */
+
+} 
+
+.item2 {
+    /* grid-row: span 2;
+    grid-column: span 2; */
+    /* grid-area: 2 / 4 / 4 / 6; */
+    /* Organizar as camadas dos elementos */
+    /* z-index: 1; */
+}
+
+.item3 {
+    /* grid-area: row-start col-start row-end col-end; */
+    /* grid-area: 3 / 1  / -1 / -1; */
+
+}

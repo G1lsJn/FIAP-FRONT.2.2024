@@ -1,0 +1,26 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid red;
+
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 1fr);
+
+    justify-items: start;
+    align-items: center;
+
+}
+
+.item {
+    padding: 10px;
+    background-color: pink;
+    color: greenyellow;
+    border: 10px solid rgb(204, 36, 92)
+
+}
+
+item2 {
+    justify-self: center;
+    align-self: end;
+}
