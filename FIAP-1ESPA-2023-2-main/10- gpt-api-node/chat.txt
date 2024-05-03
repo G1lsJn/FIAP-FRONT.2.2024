@@ -1,0 +1,24 @@
+npm init
+
+npm install express body-parser cors
+
+npm install openia@^4.0.0
+
+linha "type": "module"; no packege json debaixo do main 
+
+
+no index:
+
+import OpenAI from "openai";
+
+const openai = nem OpenAI({
+	organization: "",
+	apikey: "",
+})
+
+const chatCompletion = await openai.chat.completions.create({
+	model: "gpt-3,5".
+	messeges: [{"role": "user", "content": "Quem é você?"}]
+})
+
+console.log(chatCompletion.choices[0].message)

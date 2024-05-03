@@ -17,3 +17,32 @@
     font-size: $ft-size;
     text-transform: $txt-trans;
 }
+
+@mixin input-config($border, $w, $h, $pd-left, $ft-size, $color) {
+    background: none;
+    border: $border;
+    text-transform: none;
+    width: $w;
+    height: $h;
+    padding-left: $pd-left;
+    font-size: $ft-size;
+    color: $color;
+
+}
+
+@mixin flex-init($jc, $wr:wrap){
+    display: flex;
+    flex-wrap: $wr;
+    justify-content: $jc;
+}
+
+@mixin button($color, $ft-weight, $ft-size, $border, $padding) {
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+    font-weight: $ft-weight;
+    font-size: $ft-size;
+    border: $border;
+    padding: $padding;
+}
